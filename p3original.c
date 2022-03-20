@@ -5,16 +5,16 @@ int input_number()
   printf("enter n value\n");
   scanf("%d",&n);
   return n;
-}
+} 
 int is_composite(int n)
 {
-  int i;
+  int i; 
   for(i=2;i<=n/2;++i)
   {
     if(n%i==0)
-    return 0;
-    else
     return 1;
+    else
+    return 0;
   }
 }
 void output(int n,int composite)
